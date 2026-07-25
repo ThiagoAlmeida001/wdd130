@@ -81,7 +81,7 @@ article {
     gap: 20px;
     width: 100%;
     max-width: 760px;
-    margin: 20px auto;
+    margin: 10px auto 20px auto;
 }
 
 figure {
@@ -100,9 +100,22 @@ figure img {
     display: block;
 }
 
+figure figcaption {
+    text-align: center;
+    font-size: 0.9rem;
+    padding-top: 5px;
+}
+
 footer {
     background-color: var(--secondary-color);
-    color: var(--accent1-color);
+    color: white;
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    align-items: center;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    max-width: 1000px;
 }
 
 .socialmedia a {
@@ -158,26 +171,6 @@ h2 {
     opacity: 0.7;
     background-color: var(--accent1-color);
     color: white;
-}
-
-footer {
-    margin: 1rem auto;
-    display: grid;
-    grid-template-columns: 5fr 1fr;
-    align-items: center;
-    text-align: center;
-    border-bottom: 1px solid #ccc;
-    max-width: 1000px;
-}
-
-figure figcaption {
-    text-align: center;
-    font-size: 0.9rem;
-    padding-top: 5px;
-}
-
-.imagens-container {
-    margin-top: 10px;
 }
 
 .history-container {

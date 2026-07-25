@@ -1,8 +1,8 @@
 :root {
     --primary-color: #1ACCBF;
-    --secondary-color: #1C93AA;
-    --accent1-color: #172652;
-    --accent2-color: #1D8663;
+    --secondary-color: #1D4484;
+    --accent1-color: #236891;
+    --accent2-color: #2D8CA3;
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -30,7 +30,7 @@ header {
     display: grid;
     grid-template-columns: 1fr 2fr;
     align-items: center;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid var(--accent2-color);
     max-width: 1000px;
 }
 

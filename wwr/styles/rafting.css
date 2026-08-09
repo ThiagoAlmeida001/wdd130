@@ -506,11 +506,20 @@ button:hover {
     margin: 40px auto;
 }
 
-.trips-container h2,
+.trips-container h1,
 .table-section h2 {
     text-align: center;
     color: #f4f4f4;
     margin-bottom: 20px;
+}
+
+.trips-container h1 {
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--accent1-color);
+    color: #fff;
 }
 
 .trips-grid {

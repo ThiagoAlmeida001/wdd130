@@ -85,11 +85,10 @@ article {
 }
 
 figure {
-    border: thin #c0c0c0 solid;
     display: flex;
     flex-flow: column;
     padding: 5px;
-    width: 120px;
+    width: 180px;
     flex: 0 1 auto;
     margin: 0;
 }
@@ -98,6 +97,7 @@ figure img {
     width: 100%;
     height: auto;
     display: block;
+    border: thin var(--secondary-color) solid;
 }
 
 figure figcaption {
@@ -182,8 +182,8 @@ h2 {
 
 .history-container p {
     flex: 1;
-    margin: 0;
-    padding: 0;
+    margin: 10px;
+    padding: 10px;
 }
 
 .history-img {
@@ -191,7 +191,7 @@ h2 {
     height: auto;
 }
 
-.contact_us h1{
+.contact_us h1 {
     width: 100%;
     padding: 1px;
     text-align: center;
@@ -200,7 +200,7 @@ h2 {
     color: #000;
 }
 
-.contact_us p{
+.contact_us p {
     margin: 5px;
     padding: 0;
     font-size: 1em;
@@ -208,114 +208,361 @@ h2 {
     text-align: center;
 }
 
-
 .grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
-  margin: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin: 25px;
 }
 
 iframe {
-  width: 100%;
-  height: 360px;
-  border: 0;
+    width: 100%;
+    height: 360px;
+    border: 0;
 }
 
 .form-row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 15px;
-  margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    margin: 10px;
 }
 
 .form-row label {
-  width: 80px; 
-  font-size: 15px;
-  color: #333;
-  
+    width: 80px;
+    font-size: 15px;
+    color: #333;
+
 }
 
 .form-row input {
-  flex: 1;
-  padding: 8px;
-  border: 1px solid #757575;
-  border-radius: 3px;
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #757575;
+    border-radius: 3px;
 }
 
 .radio-container {
-  display: flex;
-  justify-content: space-between;
-  margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
 }
 
 .radio-title {
-  width: 80px;
-  font-size: 15px;
-  color: #333;
-  line-height: 1.2;
-  align-content: center;  
+    width: 80px;
+    font-size: 15px;
+    color: #333;
+    line-height: 1.2;
+    align-content: center;
 }
 
 .radio-options {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .radio-options label {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  cursor: pointer;
-  font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-size: 15px;
 }
 
 .form-row-vertical {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  margin: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 10px;
 }
 
 .form-row-vertical label {
-  font-size: 15px;
+    font-size: 15px;
 }
 
 .form-row-vertical textarea {
-  width: 100%;
-  padding: 8px;
-  border: 1px solid #757575;
-  border-radius: 3px;
-  resize: vertical;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #757575;
+    border-radius: 3px;
+    resize: vertical;
 }
 
 .checkbox-row {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 14px;
-  margin: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    margin: 10px;
 }
 
 .checkbox-row input {
-  width: 16px;
-  height: 16px;
+    width: 16px;
+    height: 16px;
 }
 
 button {
-  width: 95%;
-  padding: 10px;
-  background-color: #e0e0e0;
-  border: 1px solid #757575;
-  border-radius: 3px;
-  cursor: pointer;
-  font-size: 15px;
-  margin: 10px;
+    width: 95%;
+    padding: 10px;
+    background-color: var(--primary-color);
+    border: 1px solid #757575;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 15px;
+    margin: 10px;
 }
 
 button:hover {
-  background-color: #ccc;
+    background-color: var(--accent2-color);
+    color: #ffffff;
+}
+
+.banner-container {
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: var(--accent2-color);
+    padding: 40px;
+}
+
+.banner-image {
+    display: block;
+    width: 70%;
+    height: auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    width: 45%;
+    background-color: var(--accent1-color);
+    color: #ffffff;
+    padding: 30px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.banner-overlay h2 {
+    font-family: var(--body-font);
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+
+.banner-overlay p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.banner-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    text-decoration: none;
+    padding: 10px 25px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+.banner-button:hover {
+    background-color: var(--accent2-color);
+    color: #ffffff;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 400px;
+}
+
+.newsletter form div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.newsletter form label {
+    width: 60px;
+    font-weight: bold;
+    color: #333;
+}
+
+.newsletter form input[type="text"],
+.newsletter form input[type="email"] {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.newsletter form button {
+    width: 150px;
+    padding: 8px 16px;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    border: 1px solid #757575;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 5px;
+    transition: background-color 0.2s ease;
+}
+
+.newsletter form button:hover {
+    background-color: var(--accent1-color);
+    color: white;
+}
+
+.newsletter-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.newsletter-section .form-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 10px;
+}
+
+.grid-purpose {
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.grid-purpose h2 {
+    text-align: center;
+    background-color: var(--accent1-color);
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.grid-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.grid-row img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.grid-text {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-left: 5px solid var(--primary-color);
+    border-radius: 4px;
+}
+
+.grid-text h3 {
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+.grid-text p {
+    margin: 0;
+    padding: 0;
+    color: #333;
+    text-align: left;
+}
+
+.grid-row.reverse img {
+    grid-column: 2;
+}
+
+.grid-row.reverse .grid-text {
+    grid-column: 1;
+    grid-row: 1;
+    border-left: none;
+    border-right: 5px solid var(--primary-color);
+}
+
+.trips-container {
+    margin: 40px auto;
+}
+
+.trips-container h2,
+.table-section h2 {
+    text-align: center;
+    color: #f4f4f4;
+    margin-bottom: 20px;
+}
+
+.trips-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.trip-card {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 15px;
+    text-align: center;
+}
+
+.trip-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 12px;
+}
+
+.trip-card h3 {
+    color: var(--accent1-color);
+    margin-bottom: 8px;
+}
+
+.table-section {
+    margin: 50px auto;
+}
+
+.trips-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 1rem;
+}
+
+.trips-table th,
+.trips-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.trips-table th {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+.trips-table tr:hover {
+    background-color: #f5f5f5;
 }
